@@ -3,7 +3,7 @@
 
 ### 创建型
 
-- [简单工厂](./01-simple-factory/README.md)
+- [简单工厂](./01-simple-factory)
 
 
 ### 结构型
