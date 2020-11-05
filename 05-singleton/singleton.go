@@ -2,7 +2,7 @@ package singleton
 
 import "sync"
 
-var Config *config
+var conf *config
 var once sync.Once
 
 type config struct {
@@ -11,8 +11,8 @@ type config struct {
 
 func NewConfig() *config {
 	once.Do(func() {
-		Config = &config{db: "mysql db address"}
+		conf = &config{db: "mysql db address"}
 	})
 
-	return Config
+	return conf
 }
