@@ -7,6 +7,7 @@
 - [工厂方法](./02-factory-method)
 - [抽象工厂](./03-abstract-factory)
 - [生成器模式（建造者模式）](./04-builder)
+- [单例模式](./05-singleton)
 
 
 ### 结构型
