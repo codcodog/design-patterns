@@ -6,6 +6,7 @@
 - [简单工厂](./01-simple-factory)
 - [工厂方法](./02-factory-method)
 - [抽象工厂](./03-abstract-factory)
+- [生成器模式（建造者模式）](./04-builder)
 
 
 ### 结构型
