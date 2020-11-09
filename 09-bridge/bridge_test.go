@@ -1,21 +1,32 @@
 package bridge
 
-import "testing"
+import (
+	"fmt"
+)
 
-func TestBridge(t *testing.T) {
-	c1 := NewCircle(NewGreen())
-	if c1.shape() != "circle" {
-		t.Fatal("test shape failed.")
-	}
-	if c1.drawlMethod.drawl() != "green" {
-		t.Fatal("test drawl failed.")
-	}
+func ExampleGreenCircle() {
+	c := NewCircle(NewGreen())
+	fmt.Println(c.shape())
+	fmt.Println(c.drawlMethod.drawl())
+	// Output:
+	// circle
+	// green
+}
 
-	c2 := NewCircle(NewRed())
-	if c2.shape() != "circle" {
-		t.Fatal("test shape failed.")
-	}
-	if c2.drawlMethod.drawl() != "red" {
-		t.Fatal("test drawl failed.")
-	}
+func ExampleRedCircle() {
+	c := NewCircle(NewRed())
+	fmt.Println(c.shape())
+	fmt.Println(c.drawlMethod.drawl())
+	// Output:
+	// circle
+	// red
+}
+
+func ExampleRedRectangle() {
+	r := NewRectangle(NewRed())
+	fmt.Println(r.shape())
+	fmt.Println(r.drawlMethod.drawl())
+	// Output:
+	// rectangle
+	// red
 }

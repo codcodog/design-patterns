@@ -22,6 +22,20 @@ func (c *Circle) shape() string {
 	return "circle"
 }
 
+type Rectangle struct {
+	drawlMethod DrawlAPI
+}
+
+func NewRectangle(method DrawlAPI) *Rectangle {
+	return &Rectangle{
+		drawlMethod: method,
+	}
+}
+
+func (r *Rectangle) shape() string {
+	return "rectangle"
+}
+
 type Green struct {
 }
 
