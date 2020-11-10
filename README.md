@@ -24,6 +24,7 @@
 - [观察者模式](./11-observer)
 - [策略模式](./12-strategy)
 - [命令模式](./13-command)
+- [责任链模式](./14-chain-of-responsibility)
 
 
 ### 参考
